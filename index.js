@@ -1,4 +1,4 @@
-const { default: makeWASocket, useMultiFileAuthState } = require("@whiskeysockets/baileys");
+import makeWASocket, { useMultiFileAuthState } from "@whiskeysockets/baileys";
 
 async function startBot() {
 const { state, saveCreds } = await useMultiFileAuthState("auth_info");
